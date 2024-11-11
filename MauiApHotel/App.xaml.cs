@@ -7,14 +7,14 @@ namespace MauiApHotel
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.ContratacaoDaHospedagem());
         }
         protected override Window CreateWindow(IActivationState? activationState)
         {
             var window = base.CreateWindow(activationState);
 
-            window.Width = 600;
-            window.Height = 400;
+            window.Width = 400;
+            window.Height = 600;
 
             return window;
         }
